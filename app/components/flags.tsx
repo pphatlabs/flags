@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { useState, useEffect } from 'react';
 
@@ -48,7 +49,7 @@ export const FlagList = () => {
                     <li key={key} className="relative">
                         <div className="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-h-7 aspect-w-10 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
                             <Image
-                                src={`/flags/1x1/${String(country.topLevelDomain[0]).replace('.','')}.svg`}
+                                src={`/flags/4x3/${String(country.topLevelDomain[0]).replace('.','')}.svg`}
                                 alt={country.name}
                                 className="object-cover pointer-events-none group-hover:opacity-75"
                                 width={512}
@@ -69,6 +70,7 @@ export const FlagList = () => {
                                 ))
                             }
                         </p>
+                        <Link href={`/api/svg/4x3/${String(country.topLevelDomain[0]).replace('.','')}`} className='absolute inset-0 z-50'></Link>
                     </li>
                 ))}
             </ul>
