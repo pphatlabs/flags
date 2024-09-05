@@ -15,7 +15,7 @@ interface Country {
 const app = new Hono().basePath('/api')
 
 
-app.get('/svg/:size/:domain', async (c) => {
+app.get('/flag/:size/:domain', async (c) => {
 
     const { size, domain } = c.req.param()
     const imageUrl      = new URL(`/flags/${size ?? '4x3'}/${domain}.svg`, c.req.url)
@@ -33,7 +33,7 @@ app.get('/svg/:size/:domain', async (c) => {
 })
 
 
-app.get('/svg', async (c) => {
+app.get('/flags', async (c) => {
 
     const { limit = '10', page = '1' } = c.req.query()
 
