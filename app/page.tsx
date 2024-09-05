@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { FlagList } from './components/flags'
+import { Suspense } from 'react'
 export const metadata: Metadata = {
     title: 'Country Flags',
     description: 'Country Flags API and Responsive SVG Flags',
@@ -9,5 +10,9 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-    return <FlagList/>
+    return(
+        <Suspense fallback={<div>Loading...</div>}>
+            <FlagList/>
+        </Suspense>
+    )
 }
