@@ -1,0 +1,28 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_54)">
+<mask id="mask0_1_54" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-160" y="0" width="960" height="480">
+<path d="M-160 0V480H800V0H-160Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1_54)">
+<path d="M-160 0V480H800V0H-160Z" fill="#012169"/>
+<path d="M-160 0L800 480ZM800 0L-160 480Z" fill="black"/>
+<path d="M-160 0L800 480M800 0L-160 480" stroke="white" stroke-width="96"/>
+<mask id="mask1_1_54" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-160" y="0" width="960" height="480">
+<path d="M320 240H800V480L320 240ZM320 240V480H-160L320 240ZM320 240H-160V0L320 240ZM320 240V0H800L320 240Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_1_54)">
+<path d="M-160 0L800 480ZM800 0L-160 480Z" fill="black"/>
+<path d="M-160 0L800 480M800 0L-160 480" stroke="#C8102E" stroke-width="64"/>
+</g>
+<path d="M320 0V480ZM-160 240H800Z" fill="black"/>
+<path d="M320 0V480M-160 240H800" stroke="white" stroke-width="160"/>
+<path d="M320 0V480ZM-160 240H800Z" fill="black"/>
+<path d="M320 0V480M-160 240H800" stroke="#C8102E" stroke-width="96"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_54">
+<rect width="640" height="480" fill="white"/>
+</clipPath>
+</defs>
+</svg>
